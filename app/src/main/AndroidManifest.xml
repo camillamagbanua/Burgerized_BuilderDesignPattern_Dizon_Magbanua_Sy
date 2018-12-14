@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="burger.burgerized">
+
+    <application
+        android:allowBackup="true"
+        android:process=":second"
+        android:largeHeap="true"
+        android:icon="@mipmap/burger_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/burger_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".splash"
+            android:icon="@mipmap/burger_icon"
+            android:roundIcon="@mipmap/burger_icon_round"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LogIn" android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+        <activity android:name=".home_screen"></activity>
+        <activity android:label="Your Bag" android:name=".your_bag"></activity>
+        <activity android:label="Confirm your order" android:name=".finish"></activity>
+        <activity android:name=".wendys" ></activity>
+        <activity android:name=".sign_up"></activity>
+    </application>
+
+</manifest>
